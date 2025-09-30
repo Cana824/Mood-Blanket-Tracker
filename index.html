@@ -3,12 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="your-stylesheet-link-here.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Moode Blanket Tracker</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>Mood Blanket Tracker</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <h1>My Mood Blanket</h1>
+      <label for="moodColour">What's my mood?</label>
+      <select id="moodColour">
+        <option value="anxious">Anxious</option>
+        <option value="angry">Angry</option>
+        <option value="calm">Calm</option>
+        <option value="confident">Confident</option>
+        <option value="depressed">Depressed</option>
+        <option value="disappointed">Disappointed</option>
+        <option value="excited">Excited</option>
+        <option value="happy">Happy</option>
+        <option value="hopeful">Hopeful</option>
+        <option value="loved">Loved</option>
+        <option value="tired ">Tired</option>
+        <option value="overwhelmed">Overwhelmed</option>
+        <option value="playful">Playful</option>
+        <option value="productive">Productive</option>
+        <option value="stressed">Stressed</option>
+        <option value="thoughtful">Thoughtful</option>
+      </select>
+    </div>
+    <div>
+      <label for="moodIntensity">How strongly do I feel?</label>
+      <select id="moodIntensity">
+        <option value="1">low</option>
+        <option value="2">medium</option>
+        <option value="3">high</option>
+      </select>
+    </div>
+    <div>
+      <label for="Notes">
+        <textarea
+          id="addNotes"
+          rows="3"
+          cols="40"
+          placeholder="Write a note about your day..."
+        ></textarea>
+      </label>
+    </div>
+    <button id="addMood">Add Mood</button>
+
+    <h2>Legend</h2>
+    <div class="legend">
+      <div class="legend-title">Mood Colour Legend</div>
+
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #692544"></div>
+        <span>Anxious</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ff0000"></div>
+        <span>Angry</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #6fc5fa"></div>
+        <span>Calm</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #fecb00"></div>
+        <span>Confident</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #41648d"></div>
+        <span>Depressed</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #dfddab"></div>
+        <span>Disappointed</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #d81b5c"></div>
+        <span>Excited</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ffde21"></div>
+        <span>Happy</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ffa0b3"></div>
+        <span>Hopeful</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ff8da1"></div>
+        <span>Loved</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ffffff"></div>
+        <span> Neutral</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #d52121"></div>
+        <span>Overwhelmed</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #e8779e"></div>
+        <span>Playful</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #5f609c"></div>
+        <span>Productive</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #3b060f"></div>
+        <span>Stressed</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #596e79"></div>
+        <span>Tired</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #7d79be"></div>
+        <span>Thoughtful</span>
+      </div>
+    </div>
+    <div id="blanket"></div>
+    <script src="./script.js"></script>
+  </body>
 </html>
