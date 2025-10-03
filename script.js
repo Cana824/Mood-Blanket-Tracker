@@ -3,6 +3,7 @@ const select = document.getElementById('moodColour')
 const intensitySelect = document.getElementById('moodIntensity')
 const button = document.getElementById('addMood')
 const legend = document.getElementById('legend')
+const commentBox = document.getElementById('comment')
 
 const moods = {
   Anxious: '#692544',
@@ -23,3 +24,32 @@ const moods = {
   Tired: '#596e79',
   Thoughtful: '#7d79be',
 }
+
+//load saved data
+const savedData = localStorage.getItem('moodColour')
+if (savedData) {
+  console.log('Retrieved data', savedData)
+} else {
+  console.log('No data found for mood')
+}
+
+//make legend -show legend when page loads
+
+//show blanket - show saved blanket row data when page loads
+const savedMoods = localStorage.getItem('moodColour')
+if (savedMoods) {
+  const retrievedData = JSON.parse(savedMoods)
+  console.log('Retrieved object:', savedMoods)
+} else {
+  console.log('No data found for savedMoods')
+}
+
+//when addbutton clicked then add a new mood row
+
+//make new mood entry object - mood, intensity, comment, date
+
+//save entry
+
+//reset comment box
+
+//show updated blanket
