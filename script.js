@@ -45,6 +45,9 @@ if (savedMoods) {
 }
 
 //when addbutton clicked then add a new mood row
+addMood.addEventListener('click', function () {
+  console.log('Add Mood was pressed')
+})
 
 //make new mood entry object - mood, intensity, comment, date
 
