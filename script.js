@@ -47,12 +47,24 @@ if (savedMoods) {
 //when addbutton clicked then add a new mood row
 addMood.addEventListener('click', function () {
   console.log('Add Mood was pressed')
+
+  //make new mood entry object - mood, intensity, comment, date
+  const mood = moodSelect.value
+  let intensity = parseInt(intensitySelect.value)
+  let comment = commentBox.value.trim()
+
+  const today = new Date().toLocaleDateString()
+
+  const entry = {
+    mood: mood,
+    intensity: intensity,
+    comment: comment,
+    date: today,
+  }
+
+  //save entry
+
+  //reset comment box
+
+  //show updated blanket
 })
-
-//make new mood entry object - mood, intensity, comment, date
-
-//save entry
-
-//reset comment box
-
-//show updated blanket
